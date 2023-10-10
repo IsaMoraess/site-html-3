@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>formularios</title>	
+	<style>
+        form {
+            border: solid 2px green;
+        }
+        body {
+            background-image: url("img/fundo.jpg");
+        }
+	</style>
+</head>
+<body>
+<form method="post">
+    <h1>Formúlrio</h1>
+    <fieldset> 
+    <legend>Dados Pessoais</legend>
+        <label>Nome:</label>
+    <br>
+		<!-- caixa de entrada do tipo texto-->
+		<input type="text"  maxlength="80" size="20" />
+	<br/>
+        <label>Endereço:</label>
+        <br/>
+        <input type="endereço" maxlength="80">
+    <br/>
+        <label>Cidade</label>
+        <br/>
+        <input type="cidade" maxlength="80">
+    <br/>
+    <label>Escolha estado</label>
+<br/><select>
+    <option value="SP">São Paulo</option>
+    <option value="DF">Brasília</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="MG">Minas Gerais</option>
+</select>
+    </fieldset>
+<br/>
+
+<fieldset> 
+        <legend>Dados Profissionais</legend>
+        <legend>Natureza de Cargo</legend>
+	<input type="radio" value="Gerencia"/>	
+        <label>Gerencia</label>
+	<br/>
+	<input type="radio" value="Financeiro"/>	
+        <label>Financeiro</label>
+    <br/>
+	<input type="radio" value="Recpção"/>	
+        <label>Recpção</label>
+    <br/>
+    <input type="radio" value="Administrção"/>	
+        <label>Administrção</label>		  
+    <br/>
+	<input type="radio" value="Júridico"/>	
+        <label>Júridico</label>
+    <br/>  
+<br/>
+	<legend>Areas de interesse</legend>
+		<input type = "checkbox" value="Computação"name="Areas de interesse" />
+		<label>Computação</label>	 
+<br/>	
+		<input type = "checkbox" value="Biologia"name="Areas de interesse" />
+        <label>Biologia</label>
+<br/>
+		<input type = "checkbox" value="Meio Ambiente" name="Ares de interesse" />
+		<label>Meio Ambiente</label>	
+<br/>
+        <input type = "checkbox" value="Engenharia"name="Areas de interesse" />
+        <label>Engenharia</label>
+<br/>	
+        <input type = "checkbox" value="Historia"name="Areas de interesse" />
+        <label>Historia</label>
+<br/>
+</fieldset>	  
+<br/>
+	<label>Mini Curriculo</label>
+<br/>
+	<textarea rows="5" cols="33" ></textarea>
+<br/>
+    <input type = "submit" value="Enviar" />
+	<input type = "reset" value = "Limpar" />		
+</form>
+</body>
+</html> 
